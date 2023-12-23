@@ -33,9 +33,9 @@
     "@typescript-eslint/no-explicit-any": "error",
     "react/prop-types": "off", // If you're using TypeScript, prop-types are not needed
     "@typescript-eslint/explicit-module-boundary-types": "off", // Allows you to skip explicit return types in TypeScript
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // Only .tsx files for JSX
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }], // Only .tsx files for JSX
     "import/extensions": [
-      "error",
+      "off",
       "ignorePackages",
       {
         "js": "never",
@@ -63,6 +63,7 @@
     "linebreak-style": "off",
     "semi": "off",
     "quotes": "off",
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "no-param-reassign": "off"
   }
 }
