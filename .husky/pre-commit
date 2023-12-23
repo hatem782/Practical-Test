@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm test
+npm run lint ||
+(
+    echo '🔨❌ Yoo, you have a problem in your code. Check linter (npm run lint) 🔨❌ ';
+    false;
+)
+
+echo '🎉 No error found: committing this now ... ✨🚀🏄‍♂️🍻'
