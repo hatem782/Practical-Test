@@ -6,7 +6,6 @@ import CheckBox from "@/components/Inputs/CheckBox/CheckBox";
 
 function StockGroup() {
   const [categs, setCategs] = React.useState<checkboxType[]>([
-    { name: "All", selected: false },
     { name: "In Stocks", selected: false },
     { name: "Out Of Stocks", selected: false },
   ]);

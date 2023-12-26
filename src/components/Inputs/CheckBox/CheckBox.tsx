@@ -8,10 +8,12 @@ import styles from "./CheckBox.module.scss";
 interface CheckBoxProps {
   item: checkboxType;
   onChange?: (name: string) => void;
+  withChild?: boolean;
+  children?: React.ReactNode;
 }
 
 const CheckBox = (props: CheckBoxProps) => {
-  const { item, onChange = () => {} } = props;
+  const { item, onChange = () => {}, withChild = false, children } = props;
 
   const handleCheck = () => {
     onChange(item.name);
@@ -22,7 +24,8 @@ const CheckBox = (props: CheckBoxProps) => {
       <Flex onClick={handleCheck} className={styles.check}>
         {item.selected ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
       </Flex>
-      <T20 weight={500}>{item.name}</T20>
+      {!withChild && <T20 weight={400}>{item.name}</T20>}
+      {withChild && children}
     </Flex>
   );
 };

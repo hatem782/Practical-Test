@@ -1,0 +1,18 @@
+.main {
+}
+
+.color {
+  margin: 20px 5px 10px 0px;
+  width: 35px;
+  height: 35px;
+  border-radius: 500px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  * {
+    color: white;
+  }
+}

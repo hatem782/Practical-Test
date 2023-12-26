@@ -1,15 +1,17 @@
 import React from "react";
-import styles from "./CategsGroup.module.scss";
+import styles from "./RatesGroup.module.scss";
 import { checkboxType } from "@/types/Categs.inter";
 import { T22 } from "@/components/Texts/Texts";
 import CheckBox from "@/components/Inputs/CheckBox/CheckBox";
+import Rates from "@/components/Rates/Rates";
 
-function CategsGroup() {
+function RatesGroup() {
   const [categs, setCategs] = React.useState<checkboxType[]>([
-    { name: "Eye Glasses", selected: false },
-    { name: "Watch", selected: false },
-    { name: "Clothes", selected: false },
-    { name: "Shoes", selected: false },
+    { name: "5", selected: false },
+    { name: "4", selected: false },
+    { name: "3", selected: false },
+    { name: "2", selected: false },
+    { name: "1", selected: false },
   ]);
 
   const handleCheck = (name: string) => {
@@ -24,12 +26,19 @@ function CategsGroup() {
 
   return (
     <div className={styles.group}>
-      <T22 weight={600}>Products Categories</T22>
+      <T22 weight={600}>Products Stocks</T22>
       {categs.map((categ) => (
-        <CheckBox key={categ.name} onChange={handleCheck} item={categ} />
+        <CheckBox
+          key={categ.name}
+          onChange={handleCheck}
+          item={categ}
+          withChild
+        >
+          <Rates rates={Number(categ.name)} />
+        </CheckBox>
       ))}
     </div>
   );
 }
 
-export default CategsGroup;
+export default RatesGroup;
