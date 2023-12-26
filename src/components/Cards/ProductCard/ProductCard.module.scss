@@ -1,0 +1,47 @@
+.main {
+  position: relative;
+}
+
+.mainImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.rates {
+  margin: 5px 0px;
+}
+
+.card_bottom {
+  margin-top: 20px;
+
+  p {
+    color: var(--red);
+  }
+}
+
+.eye {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+
+  border-radius: 500px;
+
+  height: 50px;
+  width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #00000011;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}

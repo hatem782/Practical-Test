@@ -1,18 +1,22 @@
 import React from "react";
 import styles from "./SideProducts.module.scss";
-import Flex from "@/components/Flex/Flex";
-import Paper from "@/components/Paper/Paper";
+
+import { Product } from "@/types/Product.inter";
+
+import products from "@/data/products";
+import ProductCard from "@/components/Cards/ProductCard/ProductCard";
 
 function SideProducts() {
   return (
-    <Flex flex="between" className={styles.main}>
-      <Paper className={styles.card} />
-      <Paper className={styles.card} />
-      <Paper className={styles.card} />
-      <Paper className={styles.card} />
-      <Paper className={styles.card} />
-      <Paper className={styles.card} />
-    </Flex>
+    <div className={styles.main}>
+      {products.map((product: Product) => (
+        <ProductCard
+          className={styles.card}
+          product={product}
+          key={product.id}
+        />
+      ))}
+    </div>
   );
 }
 

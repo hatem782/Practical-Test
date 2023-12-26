@@ -3,9 +3,12 @@
   min-height: 80vw;
   align-content: flex-start;
 
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0px;
+
   .card {
-    width: 32%;
-    height: 400px;
-    margin: 0px 0px 50px 0px;
+    margin: 0px 20px 30px 20px;
+    grid-column: span 4;
   }
 }

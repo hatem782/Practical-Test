@@ -1,0 +1,14 @@
+.checkbox {
+  padding: 0px 0px 0px 10px;
+  margin-top: 20px;
+  user-select: none;
+  .check {
+    font-size: 24px;
+    margin: 0px 3px 0px 0px;
+    cursor: pointer;
+  }
+
+  p {
+    line-height: 0;
+  }
+}

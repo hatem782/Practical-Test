@@ -10,24 +10,18 @@ interface Props {
 function T22(props: Props) {
   const { children, className = "", weight = 400 } = props;
   return (
-    <div
-      style={{ fontWeight: weight }}
-      className={`${styles.t22} ${className}`}
-    >
+    <p style={{ fontWeight: weight }} className={`${styles.t22} ${className}`}>
       {children}
-    </div>
+    </p>
   );
 }
 
 function T20(props: Props) {
   const { children, className = "", weight = 400 } = props;
   return (
-    <div
-      style={{ fontWeight: weight }}
-      className={`${styles.t20} ${className}`}
-    >
+    <p style={{ fontWeight: weight }} className={`${styles.t20} ${className}`}>
       {children}
-    </div>
+    </p>
   );
 }
 
