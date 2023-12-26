@@ -1,0 +1,18 @@
+.nb_results {
+  color: var(--text-grey);
+}
+
+.products_show_type {
+  width: 120px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.active {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(47%) saturate(3203%)
+    hue-rotate(329deg) brightness(92%) contrast(78%);
+}

@@ -1,0 +1,24 @@
+.main {
+  width: 45%;
+  padding: 15px 15px;
+  border-radius: 500px;
+  border: solid 1px var(--grey-light);
+
+  img {
+    width: 28px;
+    height: 28px;
+    margin: 0px 10px 0px 0px;
+  }
+
+  input {
+    flex-grow: 1;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    font-size: 20px;
+  }
+
+  input::placeholder {
+    color: var(--grey-light);
+  }
+}

@@ -4,6 +4,7 @@
   --red: #d23f57;
   --white: #fff;
   --grey: #6f7173;
+  --grey-light: #6f717355;
   --main: #2b3445;
   --background: #f3f4f8;
   --background-light: #f6f8fd;
@@ -29,6 +30,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "OpenSans";
+  color: var(--text-black);
 }
 
 a {
