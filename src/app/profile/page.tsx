@@ -1,10 +1,9 @@
 import React from "react";
-import PageProducts from "@/content/PageProducts/PageProducts";
 
 function page() {
   return (
     <div>
-      <PageProducts />
+      <h1>Profile Page : Welcome Profile</h1>
     </div>
   );
 }
