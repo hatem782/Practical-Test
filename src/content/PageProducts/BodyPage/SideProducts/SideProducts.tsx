@@ -6,12 +6,12 @@ import Paper from "@/components/Paper/Paper";
 function SideProducts() {
   return (
     <Flex flex="between" className={styles.main}>
-      <Paper className={styles.card}></Paper>
-      <Paper className={styles.card}></Paper>
-      <Paper className={styles.card}></Paper>
-      <Paper className={styles.card}></Paper>
-      <Paper className={styles.card}></Paper>
-      <Paper className={styles.card}></Paper>
+      <Paper className={styles.card} />
+      <Paper className={styles.card} />
+      <Paper className={styles.card} />
+      <Paper className={styles.card} />
+      <Paper className={styles.card} />
+      <Paper className={styles.card} />
     </Flex>
   );
 }
