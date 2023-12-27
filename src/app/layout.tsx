@@ -1,3 +1,4 @@
+import { Providers } from "@/redux/provider";
 import Navbar from "@/layouts/Navbar/Navbar";
 import "./styles.scss";
 
@@ -12,11 +13,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <Providers>
+      <html lang="en">
+        <body>
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </Providers>
   );
 }

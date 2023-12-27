@@ -1,0 +1,104 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--popup-background);
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  width: 65%;
+  height: 65%;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0px 11px 15px -7px,
+    rgba(0, 0, 0, 0.14) 0px 24px 38px 3px,
+    rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+}
+
+.product {
+  width: 100%;
+  height: 100%;
+}
+
+.main_img {
+  width: 53%;
+  height: 100%;
+  position: relative;
+
+  flex-direction: column !important ;
+
+  img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .colors {
+    position: absolute;
+    bottom: 10%;
+    .color {
+      height: 50px;
+      width: 50px;
+      border-radius: 500px;
+      margin: 0px 10px;
+    }
+  }
+}
+
+.infos {
+  width: 47%;
+
+  .category {
+    color: var(--grey);
+    margin: 20px 0px;
+  }
+
+  .price {
+    color: var(--red);
+    margin: 20px 0px;
+    letter-spacing: 3px !important;
+  }
+
+  .rates {
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .description {
+    margin: 20px 0px;
+    line-height: 2;
+    color: var(--main);
+  }
+}
+
+.close {
+  color: var(--main);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 35px;
+  border-radius: 500px;
+  padding: 7px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: var(--background);
+  }
+}

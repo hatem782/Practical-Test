@@ -3,6 +3,8 @@
   background-color: var(--white);
   padding: 20px 5%;
   position: fixed;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {

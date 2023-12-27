@@ -19,7 +19,7 @@ const products: Product[] = [
     title: "Police Gray Eyeglasses",
     price: 150,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 3,
     img: img1,
     category: "Eye Glasses",
@@ -31,7 +31,7 @@ const products: Product[] = [
     title: "Say Ban Matt Black",
     price: 200,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 1,
     img: img2,
     category: "Eye Glasses",
@@ -43,7 +43,7 @@ const products: Product[] = [
     title: "Ziaomi mi band2",
     price: 171,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 4,
     img: img6,
     category: "Watch",
@@ -55,7 +55,7 @@ const products: Product[] = [
     title: "Kossil Watch Brown",
     price: 117,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 2,
     img: img7,
     category: "Watch",
@@ -67,7 +67,7 @@ const products: Product[] = [
     title: "Silver Hight Neck Sweater",
     price: 210,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 4,
     img: img10,
     category: "Clothes",
@@ -79,11 +79,11 @@ const products: Product[] = [
     title: "Women Fashion",
     price: 140,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 5,
     img: img13,
     category: "Clothes",
-    colors: ["#1C1D1D"],
+    colors: ["#473834"],
     quantity: 0,
   },
   {
@@ -91,7 +91,7 @@ const products: Product[] = [
     title: "Nike Red",
     price: 210,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 4,
     img: img11,
     category: "Shoes",
@@ -103,7 +103,7 @@ const products: Product[] = [
     title: "North Star Blue",
     price: 210,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates.",
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.",
     rates: 4,
     img: img12,
     category: "Shoes",

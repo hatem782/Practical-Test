@@ -1,0 +1,6 @@
+[ ] make popup product
+[ ] make popup shopping cart
+[ ] make filter products
+[ ] make search products 
+[ ] make add product to cart
+[ ] make responsive website
