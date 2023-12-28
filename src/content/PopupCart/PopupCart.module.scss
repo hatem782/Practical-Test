@@ -1,0 +1,116 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--popup-background);
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 1000;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.popup {
+  width: 30%;
+  height: 100%;
+  background-color: var(--white);
+  position: relative;
+  flex-direction: column;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0px 11px 15px -7px,
+    rgba(0, 0, 0, 0.14) 0px 24px 38px 3px,
+    rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+}
+
+.header {
+  width: 100%;
+  padding: 30px;
+  border-bottom: solid 1px var(--grey-light);
+
+  img {
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px 0px 0px;
+  }
+}
+
+.close {
+  color: var(--main);
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 35px;
+  border-radius: 500px;
+  padding: 7px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: var(--background);
+  }
+}
+
+.body {
+  padding: 30px;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.product {
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  position: relative;
+  img {
+    width: 20%;
+    height: auto;
+  }
+
+  .qtt {
+    color: var(--grey);
+    margin: 5px 0px;
+  }
+
+  .price {
+    color: var(--red);
+  }
+}
+
+.plus_moin {
+  flex-direction: column;
+  position: absolute;
+  right: 50px;
+
+  div {
+    width: 40px;
+    height: 40px;
+    border-radius: 500px;
+    border: solid 1px var(--red);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 20px;
+
+    margin: 5px 0px;
+    line-height: 0px;
+
+    * {
+      color: var(--red);
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 30px;
+  border-top: solid 1px var(--grey-light);
+
+  button {
+    width: 100%;
+  }
+}

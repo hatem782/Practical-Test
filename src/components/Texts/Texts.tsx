@@ -43,4 +43,13 @@ function T20(props: Props) {
   );
 }
 
-export { T40, T35, T22, T20 };
+function T16(props: Props) {
+  const { children, className = "", weight = 400 } = props;
+  return (
+    <p style={{ fontWeight: weight }} className={`${styles.t16} ${className}`}>
+      {children}
+    </p>
+  );
+}
+
+export { T40, T35, T22, T20, T16 };

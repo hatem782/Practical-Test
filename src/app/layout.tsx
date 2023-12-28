@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { Providers } from "@/redux/provider";
 import Navbar from "@/layouts/Navbar/Navbar";
 import "./styles.scss";
@@ -16,6 +17,7 @@ export default function RootLayout({
     <Providers>
       <html lang="en">
         <body>
+          <Toaster />
           <Navbar />
           {children}
         </body>

@@ -33,9 +33,16 @@ body {
   box-sizing: border-box;
   font-family: "OpenSans";
   color: var(--text-black);
+  user-select: none;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+//######################### Scroll #########################
+
+::-webkit-scrollbar {
+  width: 0px;
 }

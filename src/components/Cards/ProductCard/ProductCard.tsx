@@ -9,6 +9,7 @@ import Rates from "@/components/Rates/Rates";
 import Flex from "@/components/Flex/Flex";
 import ButtonPlus from "@/components/Buttons/ButtonPlus/ButtonPlus";
 import { ShowProd } from "@/redux/Slices/OneProdSlice";
+import { AddToCart } from "@/redux/Slices/MyCartSlice";
 
 import { eye } from "@/assets/icons";
 
@@ -26,6 +27,10 @@ function ProductCard(props: ProductCardProps) {
     dispatch(ShowProd(product));
   };
 
+  const AddProduct = () => {
+    dispatch(AddToCart(product));
+  };
+
   return (
     <Paper className={`${styles.main} ${className} ${styles[display]}`}>
       <div className={styles.eye} onClick={ShowProduct}>
@@ -39,10 +44,12 @@ function ProductCard(props: ProductCardProps) {
         </div>
         <Flex flex="between" className={styles.card_bottom}>
           <T20 weight={600}>${product.price}.00</T20>
-          {display === "grid" && <ButtonPlus />}
+          {display === "grid" && <ButtonPlus onClick={AddProduct} />}
         </Flex>
       </div>
-      {display === "lines" && <ButtonPlus className={styles.btn} />}
+      {display === "lines" && (
+        <ButtonPlus className={styles.btn} onClick={AddProduct} />
+      )}
     </Paper>
   );
 }

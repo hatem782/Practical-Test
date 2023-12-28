@@ -24,7 +24,7 @@ const products: Product[] = [
     img: img1,
     category: "Eye Glasses",
     colors: ["#78707E"],
-    quantity: 1,
+    quantity: 0,
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const products: Product[] = [
     img: img2,
     category: "Eye Glasses",
     colors: ["#1C1D1D"],
-    quantity: 1,
+    quantity: 0,
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const products: Product[] = [
     img: img6,
     category: "Watch",
     colors: ["#1C1D1D", "#FE7B7A", "#85FFB4"],
-    quantity: 1,
+    quantity: 0,
   },
   {
     id: 4,
@@ -72,7 +72,7 @@ const products: Product[] = [
     img: img10,
     category: "Clothes",
     colors: ["#1C1D1D"],
-    quantity: 1,
+    quantity: 0,
   },
   {
     id: 6,
@@ -96,7 +96,7 @@ const products: Product[] = [
     img: img11,
     category: "Shoes",
     colors: ["#FE7B7A"],
-    quantity: 1,
+    quantity: 0,
   },
   {
     id: 8,
@@ -108,7 +108,7 @@ const products: Product[] = [
     img: img12,
     category: "Shoes",
     colors: ["#6A7BFF"],
-    quantity: 1,
+    quantity: 0,
   },
 ];
 
