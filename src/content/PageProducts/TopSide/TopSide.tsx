@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import styles from "./TopSide.module.scss";
 import Paper from "@/components/Paper/Paper";
 import { T20, T22 } from "@/components/Texts/Texts";
 import Flex from "@/components/Flex/Flex";
-
+import { useAppDispatch } from "@/redux/hooks";
+import { SetDisplay } from "@/redux/Slices/ShowDisplaySlice";
 import { bloks, lines } from "@/assets/icons";
 
 interface showTypes {
@@ -15,7 +16,7 @@ interface showTypes {
 
 const showTypes: Array<showTypes> = [
   {
-    type: "bloks",
+    type: "grid",
     icon: bloks,
     id: 1,
   },
@@ -30,8 +31,12 @@ const TopSide = () => {
   const nbResults: number = 48;
   const prodSearchName: string = "mobile phone";
   const isSearching: boolean = true;
-
+  const dispatch = useAppDispatch();
   const [showType, setShowType] = React.useState<showTypes>(showTypes[0]);
+
+  useEffect(() => {
+    dispatch(SetDisplay(showType.type));
+  }, [showType, dispatch]);
 
   return (
     <Paper>

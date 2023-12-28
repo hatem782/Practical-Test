@@ -15,30 +15,34 @@ import { eye } from "@/assets/icons";
 interface ProductCardProps {
   className?: string;
   product: Product;
+  display?: string;
 }
 
 function ProductCard(props: ProductCardProps) {
   const dispatch = useAppDispatch();
-  const { className = "", product } = props;
+  const { className = "", product, display = "grid" } = props;
 
   const ShowProduct = () => {
     dispatch(ShowProd(product));
   };
 
   return (
-    <Paper className={`${styles.main} ${className}`}>
+    <Paper className={`${styles.main} ${className} ${styles[display]}`}>
       <div className={styles.eye} onClick={ShowProduct}>
         <Image src={eye} alt="eye" />
       </div>
       <Image src={product.img} className={styles.mainImg} alt="poduct" />
       <div className={styles.content}>
-        <T22 weight={600}>{product.title}</T22>
-        <Rates rates={product.rates} className={styles.rates} />
+        <div>
+          <T22 weight={600}>{product.title}</T22>
+          <Rates rates={product.rates} className={styles.rates} />
+        </div>
         <Flex flex="between" className={styles.card_bottom}>
           <T20 weight={600}>${product.price}.00</T20>
-          <ButtonPlus />
+          {display === "grid" && <ButtonPlus />}
         </Flex>
       </div>
+      {display === "lines" && <ButtonPlus className={styles.btn} />}
     </Paper>
   );
 }

@@ -2,7 +2,9 @@
   width: 75%;
   min-height: 80vw;
   align-content: flex-start;
+}
 
+.grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 0px;
@@ -10,5 +12,11 @@
   .card {
     margin: 0px 0px 30px 20px;
     grid-column: span 4;
+  }
+}
+
+.line {
+  .card {
+    margin: 0px 0px 50px 0px;
   }
 }

@@ -3,9 +3,15 @@ import Image from "next/image";
 import styles from "./ButtonPlus.module.scss";
 import plus from "./plus.svg";
 
-function ButtonPlus() {
+interface ButtonPlusProps {
+  className?: string;
+  onClick?: () => void;
+}
+
+function ButtonPlus(props: ButtonPlusProps) {
+  const { className = "", onClick } = props;
   return (
-    <div className={styles.main}>
+    <div onClick={onClick} className={`${styles.main} ${className}`}>
       <Image src={plus} alt="Plus" />
     </div>
   );

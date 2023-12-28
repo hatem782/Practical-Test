@@ -12,14 +12,11 @@ export const ShowDisplay = createSlice({
   name: "ShowDisplay",
   initialState,
   reducers: {
-    ShowGrid: (state) => {
-      state.display = "grid";
-    },
-    ShowLines: (state) => {
-      state.display = "lines";
+    SetDisplay: (state, actions) => {
+      state.display = actions.payload;
     },
   },
 });
 
-export const { ShowGrid, ShowLines } = ShowDisplay.actions;
+export const { SetDisplay } = ShowDisplay.actions;
 export default ShowDisplay.reducer;

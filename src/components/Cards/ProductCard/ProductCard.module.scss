@@ -41,7 +41,42 @@
   }
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+.lines {
+  display: flex;
+  align-items: center;
+  justify-content: flex-space;
+  margin-bottom: 30px;
+
+  .mainImg {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px 5% 0px 0px;
+  }
+
+  .btn {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    position: absolute;
+    right: 5%;
+  }
+
+  .eye {
+    top: auto;
+    left: 5%;
+
+    width: 100px;
+    height: 100px;
+
+    img {
+      opacity: 0.3;
+    }
   }
 }

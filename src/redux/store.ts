@@ -1,10 +1,10 @@
 import { Action, ThunkAction, configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./Slices/counterSlice";
+import ShowDisplayReducer from "./Slices/ShowDisplaySlice";
 import oneProdReducer from "./Slices/OneProdSlice";
 
 export const store = configureStore({
   reducer: {
-    counterReducer,
+    ShowDisplayReducer,
     oneProdReducer,
   },
   devTools: process.env.NODE_ENV !== "production",
