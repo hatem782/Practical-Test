@@ -1,38 +1,25 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-type CounterState = {
-  value: number;
+type ShowDisplayType = {
+  display: "grid" | "lines";
 };
 
 const initialState = {
-  value: 0,
-} as CounterState;
+  display: "grid",
+} as ShowDisplayType;
 
-export const counter = createSlice({
-  name: "counter",
+export const ShowDisplay = createSlice({
+  name: "ShowDisplay",
   initialState,
   reducers: {
-    reset: () => initialState,
-    increment: (state) => {
-      state.value += 1;
+    ShowGrid: (state) => {
+      state.display = "grid";
     },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload;
-    },
-    decrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value -= action.payload;
+    ShowLines: (state) => {
+      state.display = "lines";
     },
   },
 });
 
-export const {
-  increment,
-  incrementByAmount,
-  decrement,
-  decrementByAmount,
-  reset,
-} = counter.actions;
-export default counter.reducer;
+export const { ShowGrid, ShowLines } = ShowDisplay.actions;
+export default ShowDisplay.reducer;
