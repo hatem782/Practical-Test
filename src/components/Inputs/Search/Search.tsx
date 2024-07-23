@@ -30,6 +30,7 @@ function Search(props: PropsType) {
     <Flex flex="start" className={`${styles.main} ${className}`}>
       <Image src={search} alt="search" />
       <input
+        className={styles.input}
         type="text"
         placeholder={placeholder}
         value={value}
